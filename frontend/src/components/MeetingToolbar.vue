@@ -289,14 +289,14 @@ const moreOptions = computed(() => [
 			resetHideTimer();
 		},
 	},
-	{
-		icon: LucideBug,
-		label: "Report an issue",
-		onClick: () => {
-			emit("report-problem");
-			resetHideTimer(true);
-		},
-	},
+	// {
+	// 	icon: LucideBug,
+	// 	label: "Report an issue",
+	// 	onClick: () => {
+	// 		emit("report-problem");
+	// 		resetHideTimer(true);
+	// 	},
+	// },
 	...(isMobile.value
 		? [
 				{
